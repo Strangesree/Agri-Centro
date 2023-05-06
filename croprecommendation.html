@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Book an Appointment</title>
+    <style>
+        body {
+          background-image: url("background2.jpeg");
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+    <link rel="stylesheet" type="text/css" href="appointment.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>CROP RECOMMENDATION SYSTEM</h1>
+      <form action="#" method="post">
+        <label for="nitrogen">Nitrogen Percentage:</label>
+<input type="number" id="nitrogen" name="nitrogen" min="0" max="100" step="0.01" required>
+
+
+<label for="nitrogen">Phosporus Percentage:</label>
+<input type="number" id="phosporus" name="phosporus" min="0" max="100" step="0.01" required>
+
+
+<label for="nitrogen">Potassium Percentage:</label>
+<input type="number" id="pottasium" name="pottasium" min="0" max="100" step="0.01" required>
+
+
+<label for="temperature">Temperature (Celsius):</label>
+<input type="number" id="temperature" name="temperature" min="-273.15" step="0.01" required>
+
+
+<label for="humidity">Humidity Percentage:</label>
+<input type="number" id="humidity" name="humidity" min="0" max="100" step="0.01" required>
+
+
+<label for="ph">pH Value:</label>
+<input type="number" id="ph" name="ph" min="0" max="14" step="0.01" required>
+
+<label for="rainfall">Rainfall (mm):</label>
+<input type="number" id="rainfall" name="rainfall" min="0" step="0.01" required>
+
+
+
+
+        <button type="submit">Crop Planner</button>
+      </form>
+    </div>
+  </body>
+</html>
