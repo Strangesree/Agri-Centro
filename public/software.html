@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Agri-Centro</title>
+    <style>
+        body {
+            background-image: url("background1.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="software.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <p>Agri-Centro</p>
+            <a href="#About">About us</a>
+            <a href="#contact">Contact us</a>
+        </div>
+    </header>
+
+    <div class="button-container">
+
+        <button id="services-btn">Software</button>
+
+    </div>
+
+    <div class="navigation">
+        <div class="nav-item">
+            <p><a href="#">Disease Detection</a></p>
+            <button>AI Detection</button>
+            <div class="box1">
+                <button onclick="location.href='appointment.html'">Physical Examination</button>
+            </div>
+
+        </div>
+        <div class="nav-item">
+            <p><a href="#">Crop price prediction</a></p>
+            <button>Predict the price</button>
+        </div>
+        <div class="nav-item">
+            <p><a href="#">Crop planner</a></p>
+            <button>Plan my yeild</button>
+        </div>
+    </div>
+
+
+    <div id="clock"></div>
+
+    <script>
+        function showTime() {
+            var date = new Date();
+            var time = date.toLocaleTimeString();
+            var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+            var clock = document.getElementById("clock");
+            clock.innerHTML = time + "<br>" + timezone;
+        }
+
+        setInterval(showTime, 1000);
+    </script>
+    </div>
+</body>
+
+</html>
